@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="booking.html">
-    <link rel="stylesheet" href="assets/css/booking.css">
-    <link rel="stylesheet" href="path/to/libs/font-circe/css/font-circe.css">
-    <title>Ресторан</title>
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="header__logo">Ресторан</div>
-    
-                <nav class="nav">
-                    <a class="nav__link active" href="#">Меню</a>
-                    <a class="nav__link" href="#">О ресторане</a>
-                    <a class="nav__link" href="#">Адрес</a>
-                    <a class="nav__link" href="#">Контакты</a>
-                    <a class="btn" href="booking.html">Забронировать стол</a>
-                </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="booking.html" />
+        <link rel="stylesheet" href="assets/css/booking.css" />
+        <link rel="stylesheet" href="path/to/libs/font-circe/css/font-circe.css" />
+        <title>Ресторан</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">Ресторан</div>
+
+                    <nav class="nav">
+                        <a class="nav__link active" href="#">Меню</a>
+                        <a class="nav__link" href="#">О ресторане</a>
+                        <a class="nav__link" href="#">Адрес</a>
+                        <a class="nav__link" href="#">Контакты</a>
+                        <a class="btn" href="booking.html" onClick="return showModal('booking-form')" >Забронировать стол</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="intro">
+            <div class="container">
+                <div class="intro__inner">
+                    <h1 class="intro__title">Welcome to restaurant</h1>
+
+                    <a class="btn" href="#" onClick="return showModal('booking-form')">Забронировать стол</a>
+                </div>
             </div>
         </div>
-    </header>
-    
-    
-    <div class="intro">
-        <div class="container">
-            <div class="intro__inner">
-                
-                <h1 class="intro__title">Welcome to restaurant</h1>
-    
-                <a class="btn" href="#">Забронировать стол</a>
+
+        <div class="modal" id="booking-form">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>RESTO</h3>
+                    <button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Забронировать стол</p>
+                    <form>
+                        <input type="text" />
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    
-    
-    
-</body>
+
+        <script src="js/custom.js"></script>
+    </body>
 </html>
