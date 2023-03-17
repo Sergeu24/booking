@@ -46,22 +46,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.intro__title {
-    color: #fff;
-    font-size: 150px;
-    font-weight: 700;
-    line-height: 1;
-}
 
-.intro__title:after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    margin: 60px auto;
-
-    background-color: #fff;
-}
 
 
 

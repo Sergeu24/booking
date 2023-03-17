@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +21,7 @@
                     <a class="nav__link" href="#">О ресторане</a>
                     <a class="nav__link" href="#">Адрес</a>
                     <a class="nav__link" href="#">Контакты</a>
-                    <a class="btn" href="booking.html">Забронировать стол</a>
+                    <a class="btn" href="booking.html" onClick="return showModal('booking-form')" >Забронировать стол</a>
                 </nav>
             </div>
         </div>
@@ -31,15 +31,79 @@
     <div class="intro">
         <div class="container">
             <div class="intro__inner">
-                
                 <h1 class="intro__title">Welcome to restaurant</h1>
-    
-                <a class="btn" href="#">Забронировать стол</a>
+
+                <a class="btn" href="#" onClick="return showModal('booking-form')">Забронировать стол</a>
             </div>
         </div>
     </div>
+
+    <div class="modal" id="booking-form">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>RESTO</h3>
+                <button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Забронировать стол</p>
+                <form>
+                <input type="text" class="form-control" name="name" placeholder="Имя">
+                <input type="text" class="form-control" name="phone" placeholder="Телефон">
+                <input type="text" class="form-control" name="count_persons" placeholder="Гостей">
+                <input type="text" class="form-control" name="time" placeholder="Время">
+                <button class="btn-modal-body">Забронировать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
     
     
     
+    
+    
+    
+    
+    
+    <!-- <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                
+                <h1 class="intro__title">Welcome to restaurant</h1>
+    
+                <a class="btn" href="booking.html" onclick="showModalForm('booking-form'); return false;">Забронировать стол</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay hide" id="booking-form">
+        <div class="modal-form">
+            <form>
+                <div class="modal-form__close-button " onclick="closeModalForm">
+                    x
+                </div>
+                <div class="modal-form__title">
+                        food
+                </div>
+                <div class="modal-form__description">
+                    забронировать столик
+
+                </div>
+                <input type="text" class="form-control" name="name" placeholder="Имя">
+                <input type="text" class="form-control" name="phone" placeholder="Телефон">
+                <input type="text" class="form-control" name="count_persons" placeholder="Гостей">
+                <input type="text" class="form-control" name="time" placeholder="Время">
+                <button class="btn">Забронировать</button>
+            </form>
+
+        </div>
+
+    </div>
+    
+    
+    <script type="text/javascript" src="script.js"></script> -->
 </body>
 </html>
+
+
